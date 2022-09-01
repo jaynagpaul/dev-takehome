@@ -1,32 +1,34 @@
-# Introduction
-Hello, thank you for showing your interest in Bits of Good! We would like you to showcase your skills directly by actually coding out an app! We hope you enjoy the task and feel free to reach out to our email (hello@bitsofgood.org) if you have any questions! 
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-# Submission
-Please fork this repository and append the semester and year to the repository name. For example, fall2022-dev-takehome or spring 2023-dev-takehome. Include a link to your repository in the written developer application.
+## Getting Started
 
-# Task
-### Feature 1: Todo Form
-1. Form should have input fields for title (a short description of todo item), tags (array of words describing todo item), and a due 
-2. The user can create a tag via a text input field and "create tag" button
-3. The user can view all created tags in the todo form in a list view 
-4. The user can toggle each tag to delete them
-5. The user can create a new todo item appear on the todo list section (feature 2)
-6. The user cannot create a todo item when title and due dates aren't specified
-7. The form should be cleared out after creating a new todo item (title text input field, tag list, tag input field, due date input field should be cleared after creating a new todo item)
+First, run the development server:
 
-### Feature 2: Todo List section
-1. Todo list section should display todo items contained in a card
-2. Each todo item card should have a title, a due date, and tags
-3. The user can mark the todo completed by toggling the todo card
-4. The toggled todo item should be visually explicit that the item is completed, either via including a checkbox or by graying out todo item card
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-### Feature 3: Sort Section
-1. Sort section should have sort by date and sort by completed options
-2. User can sort by date in increasing order by clicking on sort by date option (if todo item A has due date 8/28/2021 and todo item B has due date 9/1/2021, todo item A should appear before todo item B)
-3. User can bring incompleted todo items to front and completed items to the back by clicking on sort by completed option 
-4. If both buttons are toggled, items should be sorted by completedness first and each section, completed and incompleted, should be sorted by dates in increasing order
-6. (Bonus) Implement a filter feature that filters the list of todo items based on tags. Tags should be displayed as dropdown and users should be able to select multiple tags from the dropdown. Note that this is a filter feature, so any todo items that does not contain the feature should not be displayed. Resetting filters should revert the array to previous state (display all items) 
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-#### Sample UI
-![image](https://user-images.githubusercontent.com/39681900/128660900-8ea9ad4a-85e2-4f5f-afcd-2e9809ac9c9e.png)
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
